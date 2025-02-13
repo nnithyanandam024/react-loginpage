@@ -26,7 +26,7 @@ mysqlConnection.connect((err) => {
 }); 
 
 // Route to save email and password
-app.post('/', (req, res) => {
+app.post('/api/register', (req, res) => {
     const { email, password } = req.body;
 
     // Simple validation
